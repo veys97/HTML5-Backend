@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JavaScript Başlangıç</title>
+    <link href="index.css" rel="stylesheet" />
+    <!--<link href="main.js" rel="stylesheet" />-->
+    <!--Link değil script ile harici js dosyası bağlanır-->
+    <!--Ayrıca head'in içerisine değil body'nin içerisine yazılır, eklenir.-->
+</head>
+<body>
+    <!--<input type="text" onfocus="alert('Seçildi')">-->
+    <!--<span id="tr">Türkiye</span> <br />
+    <span id="usa">Amerika Birleşik Devletleri</span><br />-->
+
+    <input type="text" placeholder="Sayı 1" id="sayi1" />
+    <input type="text" placeholder="Sayı 2" id="sayi2" /><br />
+    <input type="button" value="Topla" onclick="Hesapla()" /><br />
+    <input type="text" id="sonuc" /><br />
+    <hr />
+    <input type="text" id="sayi3" placeholder="Sayı Giriniz " /><br /><br />
+    <input type="button" value="Karşılaştır" onclick="Karsilastir()" /><br />
+    <br />
+    <div id="d1"></div>
+    <hr />
+    <div class="c1"></div>
+    <div class="c1"></div>
+    <hr />
+    <p></p>
+    <hr />
+    <input id="fullname" type="text" placeholder="İsim Soyisim Giriniz" /> <br /><br />
+    <input id="phone" type="text" placeholder="Telefon Numaranız" onkeypress="return sayiKontrol(event)" /> <br /><br />
+    <input type="text" id="message" placeholder="Mesajınız" /><br /><br />
+    <input type="button" value="Gönder" onclick="Gonder()" /><br /><br />
+    <span id="result"></span>
+    <hr />
+    <input type="text" id="sayi4" placeholder="Birinci Sayıyı Giriniz" /><br />
+    <br />
+    <input type="text" id="s5" placeholder="İkinci Sayıyı Giriniz" /><br />
+    <br />
+    <select id="islem">
+        <option>İşlem Türü Seçiniz</option>
+        <option value="+" >Toplama</option>
+        <option value="-" >Çıkarma</option>
+        <option value="*">Çarpma</option>
+        <option value="/">Bölme</option>
+    </select>
+    <input type="button" value="Hesapla" onclick="HesapMakinesi()"/>
+    <br />
+    <span id="cevap" style="color:blue;"></span>
+
+    <script src="main.js"></script>
+</body>
+</html>
